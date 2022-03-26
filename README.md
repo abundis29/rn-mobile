@@ -7,11 +7,15 @@
  IOS:  `Xcode or developer tools`
  ANDROID:  `Android Studio`
 
-### `npx create-react-native-app --template https://github.com/abundis29/rn-mobile`
+### Using Template
+
+ `npx create-react-native-app --template https://github.com/abundis29/rn-mobile`
 
 or
 
-### `npm run setup`
+### Cloning The Project
+
+`npm run setup`
 
 If it fails the first time, run it twice 💔
 
