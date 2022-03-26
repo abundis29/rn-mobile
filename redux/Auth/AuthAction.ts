@@ -1,4 +1,4 @@
-import * as ActionTypes from "./AuthActionTypes";
+import * as ActionTypes from './AuthActionTypes';
 
 export const fetchLogin = (data: any) => (dispatch: any) => {
   dispatch(loginLoading());
