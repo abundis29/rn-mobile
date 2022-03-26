@@ -1,9 +1,5 @@
 # OPINIONATED REACT NATIVE BOILERPLATE  📲 # PRECONFIG REACT_NATIVE_APP ❤️‍🩹
 
-## Available Scripts 📝
-
-In the project directory, you can run:
-
 ## Installation 🛠
 
  please install before setup
@@ -11,11 +7,17 @@ In the project directory, you can run:
  IOS:  `Xcode or developer tools`
  ANDROID:  `Android Studio`
 
+### `npm run setup`
+
+If it fails the first time, run it twice 💔
+
+## Available Scripts 📝
+
+In the project directory, you can run:
+
 ### `npm run ios`
 
 ### `npm run android`
-
-If it fails the first time, run it twice 💔
 
 ### ``
 
