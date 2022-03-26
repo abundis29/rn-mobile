@@ -13,7 +13,9 @@
 
 or
 
-### Cloning The Project
+### Using The Template 
+<img width="620" alt="Screen Shot 2022-03-26 at 4 20 22" src="https://user-images.githubusercontent.com/26385676/160235257-eb737edc-3c03-46e4-90e3-b8f0c91e4677.png">
+
 
 `npm run setup`
 
