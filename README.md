@@ -2,6 +2,8 @@
 
 ## Installation 🛠
 
+[![Node.js CI](https://github.com/abundis29/rn-mobile/actions/workflows/node.js.yml/badge.svg)](https://github.com/abundis29/rn-mobile/actions/workflows/node.js.yml)
+
  please install before setup
  Development: `npm -g yarn`
  IOS:  `Xcode or developer tools`
