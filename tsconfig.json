@@ -1,4 +1,9 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "paths": {
+    "~/*": ["./*"] // ← これが怪しい
+  },
   "extends": "expo/tsconfig.base"
 }

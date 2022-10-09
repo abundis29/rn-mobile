@@ -19,7 +19,7 @@ module.exports = {
       'error',
       'single',
       { avoidEscape: true, allowTemplateLiterals: true },
-    ],
+    ]
   },
   ignorePatterns: ['dist/**/*.js', 'scripts/*.js', 'coverage'],
   settings: {

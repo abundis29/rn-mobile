@@ -1,11 +1,12 @@
 {
   "dependencies": {
     "@react-native-async-storage/async-storage": "~1.15.0",
+    "@react-native-firebase/storage": "^15.7.0",
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/stack": "^6.3.1",
     "@testing-library/jest-native": "^4.0.11",
     "@testing-library/react-native": "^11.1.0",
-    "@types/jest": "^27.4.1",
+    "@types/jest": "^29.1.2",
     "babel-jest": "^29.0.3",
     "expo": "^44.0.0",
     "expo-linking": "~3.0.0",
@@ -13,6 +14,7 @@
     "expo-updates": "~0.11.7",
     "husky": "^8.0.1",
     "jest": "^26.6.3",
+    "jest-expo": "^46.0.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.1",
     "react": "17.0.1",
@@ -24,7 +26,7 @@
     "react-native-web": "0.17.7",
     "react-navigation": "^4.4.4",
     "react-redux": "^8.0.2",
-    "redux": "^4.2.0",
+    "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.1"
@@ -39,6 +41,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.8",
+    "react-test-renderer": "^17.0.0",
     "typescript": "~4.8.3"
   },
   "scripts": {
@@ -46,19 +49,41 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest",
     "doctor": "expo doctor",
-    "validate": "npm run doctor && npm run test && npm run lint",
+    "validate": "npm run doctor && npm run testFinal && npm run lint",
     "lint": "eslint .",
     "format": "prettier --single-quote --write \"./\"",
     "setup": "node setup",
-    "postinstall": "npm run validate"
+    "postinstall": "npm run validate",
+    "test": "jest --watch --coverage=false --changedSince=origin/main",
+    "testDebug": "jest -o --watch --coverage=false",
+    "testFinal": "jest",
+    "updateSnapshots": "jest -u --coverage=false"
   },
   "version": "1.0.0",
   "private": true,
   "name": "mobile",
   "jest": {
-    "preset": "react-native"
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|redux-persist|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/babel.config.js",
+      "!**/jest.setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {},
+    "setupFiles": ["./__mocks__/@react-native-async-storage/async-storage.ts"]
   },
   "husky": {
     "hooks": {
