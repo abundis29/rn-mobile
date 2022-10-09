@@ -26,3 +26,6 @@ jobs:
           cache: 'npm'
       - run: npm install --legacy-peer-deps
       - run: npm test
+      
+      - name: Jest coverage comment
+        uses: MishaKav/jest-coverage-comment@main
