@@ -55,9 +55,9 @@
     "format": "prettier --single-quote --write \"./\"",
     "setup": "node setup",
     "postinstall": "npm run validate",
-    "test": "jest --watch --coverage=false --changedSince=origin/main",
+    "testWatch": "jest --watch --coverage=false --changedSince=origin/main",
     "testDebug": "jest -o --watch --coverage=false",
-    "testFinal": "jest",
+    "test": "jest",
     "updateSnapshots": "jest -u --coverage=false"
   },
   "version": "1.0.0",
