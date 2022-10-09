@@ -1,5 +1,5 @@
-import { createStackNavigator } from "@react-navigation/stack";
-import AuthStackScreen from "./AuthNavigation";
+import { createStackNavigator } from '@react-navigation/stack';
+import AuthStackScreen from './AuthNavigation';
 
 const RootStack = createStackNavigator();
 

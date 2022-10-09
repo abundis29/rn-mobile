@@ -1,11 +1,11 @@
 /* eslint-disable max-len */
 import React from 'react';
-import {View} from 'react-native';
-import {Input, CheckBox, Button} from 'react-native-elements';
+import { View } from 'react-native';
+import { Input, CheckBox, Button } from 'react-native-elements';
 // import {BASE_URL} from '../../../config';
-import {styles} from './LoginScreenStyles';
+import { styles } from './LoginScreenStyles';
 
-const LoginScreen = ({navigation}:any) => {
+const LoginScreen = ({ navigation }: any) => {
   // const [text, onChangeText] = React.useState('');
   // const [secure, setSecure] = React.useState('');
 
@@ -32,14 +32,14 @@ const LoginScreen = ({navigation}:any) => {
     <View style={styles.container}>
       <Input
         placeholder="Username"
-        leftIcon={{type: 'font-awesome', name: 'user-o'}}
+        leftIcon={{ type: 'font-awesome', name: 'user-o' }}
         onChangeText={(username) => setUsername(username)}
         value={username}
         containerStyle={styles.formInput}
       />
       <Input
         placeholder="Password"
-        leftIcon={{type: 'font-awesome', name: 'key'}}
+        leftIcon={{ type: 'font-awesome', name: 'key' }}
         onChangeText={(password) => setPassword(password)}
         value={password}
         containerStyle={styles.formInput}

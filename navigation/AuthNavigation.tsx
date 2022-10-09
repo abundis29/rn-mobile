@@ -1,5 +1,5 @@
-import { createStackNavigator } from "@react-navigation/stack";
-import { LoginScreen, OnboardingScreen, SignInScreen } from "../screens/auth";
+import { createStackNavigator } from '@react-navigation/stack';
+import { LoginScreen, OnboardingScreen, SignInScreen } from '../screens/auth';
 
 const AuthStack = createStackNavigator();
 const AuthStackScreen = () => {

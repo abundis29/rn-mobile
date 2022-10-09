@@ -1,8 +1,8 @@
-import React from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
-import useColorScheme from "../../hooks/useColorScheme";
-import Colors from "../../theme/Colors";
-import { styles } from "./LoadingStyles";
+import React from 'react';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import useColorScheme from '../../hooks/useColorScheme';
+import Colors from '../../theme/Colors';
+import { styles } from './LoadingStyles';
 
 const Loading = () => {
   const colorScheme = useColorScheme();

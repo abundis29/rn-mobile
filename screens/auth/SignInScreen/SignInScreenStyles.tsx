@@ -1,17 +1,17 @@
-import { StyleSheet } from "react-native";
-import { INNER_PADDING, SCREEN_PADDING } from "../../../theme";
+import { StyleSheet } from 'react-native';
+import { INNER_PADDING, SCREEN_PADDING } from '../../../theme';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: 'white',
     flex: 1,
     padding: SCREEN_PADDING,
-    alignItems: "center", // ignore this - we'll come back to it
-    justifyContent: "center", // ignore this - we'll come back to it
+    alignItems: 'center', // ignore this - we'll come back to it
+    justifyContent: 'center', // ignore this - we'll come back to it
   },
   imageContainer: {
     flex: 1,
-    flexDirection: "row",
+    flexDirection: 'row',
     padding: 40,
   },
   image: {
@@ -20,17 +20,17 @@ export const styles = StyleSheet.create({
     height: 60,
   },
   formInput: {
-    alignSelf: "stretch",
+    alignSelf: 'stretch',
     padding: INNER_PADDING,
   },
   formCheckbox: {
-    alignSelf: "stretch",
+    alignSelf: 'stretch',
     margin: INNER_PADDING,
     backgroundColor: null,
     borderWidth: 0,
   },
   formButton: {
-    alignSelf: "stretch",
+    alignSelf: 'stretch',
     margin: INNER_PADDING,
   },
 });
