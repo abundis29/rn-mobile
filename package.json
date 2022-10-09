@@ -50,7 +50,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "doctor": "expo doctor",
-    "validate": "npm run doctor && npm run testFinal && npm run lint",
+    "validate": "npm run doctor && npm run test && npm run lint",
     "lint": "eslint .",
     "format": "prettier --single-quote --write \"./\"",
     "setup": "node setup",
